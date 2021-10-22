@@ -1,4 +1,4 @@
-// import DisplayTodos from "./components/DisplayTodos";
+import { DisplayTodos } from "../components/DisplayTodos";
 import { Todos } from "../components/Todos";
 import { motion } from "framer-motion";
 import styled from 'styled-components';
@@ -21,7 +21,7 @@ function App() {
         transition={{ type: "spring", duration: 1 }}
       >
         <Todos />
-        {/* <DisplayTodos /> */}
+        <DisplayTodos />
       </motion.div>
     </StyledApp>
   );

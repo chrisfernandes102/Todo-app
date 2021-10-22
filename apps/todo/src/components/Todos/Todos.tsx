@@ -17,7 +17,7 @@ const mapStateToProps = (state: Array<Object>) => {
 };
 
 // Map dispatch to props function.
-const mapDispatchToProps = (dispatch: (arg0: any) => any) => {
+const mapDispatchToProps = (dispatch: Function) => {
   return {
     addTodo: (obj: any) => dispatch(addTodos(obj)),
   };
@@ -56,12 +56,6 @@ const ConnectedTodos: React.FC<TodosProps> = (props) => {
         Add
       </AddButton>
       <br />
-      <ul>
-        {props.todos.length > 0 &&
-          props.todos.map((item) => {
-            return <li key={item.id}>{item.item}</li>;
-          })}
-      </ul>
     </AddTodos>
   )
 }

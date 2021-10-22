@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { constants } from "fs";
 
 export interface TodoItemProps {
-  id: Number,
-  item: Object,
-  completed: Boolean,
+  id: number,
+  item: string,
+  completed: boolean,
 }
 
 const initialState: Array<TodoItemProps> = [];

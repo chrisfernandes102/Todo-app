@@ -9,6 +9,8 @@
   },
   "private": true,
   "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
     "@nrwl/cli": "13.0.1",
     "@nrwl/cypress": "13.0.1",
     "@nrwl/eslint-plugin-nx": "13.0.1",
